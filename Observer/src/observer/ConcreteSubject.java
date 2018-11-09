@@ -2,8 +2,8 @@
  * 
  */
 package observer;
-import java.util.*;
 
+import java.util.ArrayList;
 
 /**
  * @author 26306
@@ -11,6 +11,7 @@ import java.util.*;
  */
 public class ConcreteSubject implements Subject {
 	private ArrayList<Observer> observer;
+
 	/**	
 	 * 
 	 */
@@ -19,8 +20,9 @@ public class ConcreteSubject implements Subject {
 		observer = new ArrayList<>();
 	}
 
-
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see observer.Subject#registerObserver()
 	 */
 	@Override
@@ -28,7 +30,9 @@ public class ConcreteSubject implements Subject {
 		observer.add(obs);
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see observer.Subject#unRigisterObserver()
 	 */
 	@Override
@@ -36,7 +40,10 @@ public class ConcreteSubject implements Subject {
 		// TODO Auto-generated method stub
 
 	}
-	/* (non-Javadoc)
+
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see observer.Subject#notisfyObserver()
 	 */
 	@Override
